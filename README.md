@@ -46,12 +46,12 @@ Steps to build a template for web application built with Node.js, Express, and M
 - [x] Export home controller to use in index.js/routes.js
 
 ## Routes
-- [ ] Create routes.js file for main routing
-- [ ] Import Router from Express
-- [ ] Import homeController
+- [x] Create routes.js file for main routing
+- [x] Import Router from Express
+- [x] Import homeController
 - [ ] Set routes - auth, resources, etc.
-- [ ] Export routes
-- [ ] Import and use in index.js
+- [x] Export routes
+- [x] Import and use in index.js
 
 
 
