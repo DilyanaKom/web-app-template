@@ -5,32 +5,53 @@ Steps to build a template for web application built with Node.js, Express, and M
 - [x] 'npm init'
 - [x] .gitignore file
 - [x] Update type: module for ES Modules
-- [x] "dev": "node --watch src/index.js"
+- [x] "dev": "node --watch src/index.js" or "nodemon index.js"
 - [x] Create src folder
 - [x] Create index.js file
 - [x] Download resources (sample resources in this project)
 
 ## Handlebars config
 - [x] 'npm i express-handlebars'
-- [x] import in index.js
-- [x] register Handlebars with Express
-- [x] set Handlebars as defalt view engine for Express
-- [x] set Express to look for views in './src/views'
-- [x] create Views folder in src
+- [x] Import in index.js
+- [x] Register Handlebars with Express
+- [x] Set Handlebars as defalt view engine for Express
+- [x] Set Express to look for views in './src/views'
+- [x] Create Views folder in src
 
 ## Public resources
-- [x] create folder Public in src
-- [x] save css and images there (sample resources in this project)
+- [x] Create folder Public in src
+- [x] Save css and images there (sample resources in this project)
 
 ## Template views
-- [ ] Create layout folder
-- [ ] Create main.hbs (sample in this project)
+- [x] Create layout folder
+- [x] Create main.hbs - header, footer, error message div (sample in this project)
+- [x] Add  <main>{{{body}}}</main> to main.hbs
+- [x] Fix path to css files in main.hbs
+- [x] Add hrefs in nagivation
+- [x] Remove layout content from templates
 
 ## Express config
 - [x] 'npm i express'
-- [x] import express in index.js
-- [x] start server
-- [x] serve static files from folder Public
+- [x] Import express in index.js
+- [x] Start server
+- [x] Serve static files from folder Public
+
+## Controllers
+- [x] Create contollers folder
+- [x] Add contoller file for each service
+
+## Home Controller
+- [x] Import Router from Express
+- [x] Create get route for home/about
+- [x] Export home controller to use in index.js/routes.js
+
+## Routes
+- [ ] Create routes.js file for main routing
+- [ ] Import Router from Express
+- [ ] Import homeController
+- [ ] Set routes - auth, resources, etc.
+- [ ] Export routes
+- [ ] Import and use in index.js
 
 
 
