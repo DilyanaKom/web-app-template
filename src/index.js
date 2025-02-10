@@ -22,6 +22,7 @@ app.set('views', './src/views');
 
 //Express config
 app.use('/static', express.static('src/public'));
+app.use(express.urlencoded({extended: false})); //body parser
 
 app.use(routes);
 

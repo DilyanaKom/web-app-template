@@ -1,5 +1,5 @@
 # web-app-template
-Steps to build a template for web application built with Node.js, Express, and MongoDB.
+Steps to build a web application with Node.js, Express, and MongoDB.
 
 ## Init project
 - [x] 'npm init'
@@ -17,6 +17,8 @@ Steps to build a template for web application built with Node.js, Express, and M
 - [x] Set Handlebars as defalt view engine for Express
 - [x] Set Express to look for views in './src/views'
 - [x] Create Views folder in src
+- [x] Add body parser
+
 
 ## Public resources
 - [x] Create folder Public in src
@@ -24,11 +26,13 @@ Steps to build a template for web application built with Node.js, Express, and M
 
 ## Template views
 - [x] Create layout folder
+- [x] Create Auth folder with login and register views
 - [x] Create main.hbs - header, footer, error message div (sample in this project)
 - [x] Add  <main>{{{body}}}</main> to main.hbs
 - [x] Fix path to css files in main.hbs
 - [x] Add hrefs in nagivation
 - [x] Remove layout content from templates
+- [x] Fix name attributes for forms
 
 ## Express config
 - [x] 'npm i express'
@@ -45,11 +49,17 @@ Steps to build a template for web application built with Node.js, Express, and M
 - [x] Create get route for home/about
 - [x] Export home controller to use in index.js/routes.js
 
+## Auth Controller
+- [x] Get login
+- [ ] Post login + error handling
+- [x] Get register
+- [ ] Post register + error handling
+
 ## Routes
 - [x] Create routes.js file for main routing
 - [x] Import Router from Express
-- [x] Import homeController
-- [ ] Set routes - auth, resources, etc.
+- [x] Import homeController, authController, etc.
+- [x] Set routes - auth, resources, etc.
 - [x] Export routes
 - [x] Import and use in index.js
 
