@@ -44,6 +44,12 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 - [x] Create contollers folder
 - [x] Add contoller file for each service
 
+## Mongoose
+- [x] 'npm i mongoose'
+- [x] Import mongoose
+- [x] Config db in index.js
+- [ ] Display error message when cannot connect to db
+
 ## Home Controller
 - [x] Import Router from Express
 - [x] Create get route for home/about
