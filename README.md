@@ -3,11 +3,12 @@ Steps to build a template for web application built with Node.js, Express, and M
 
 ## Init project
 - [x] 'npm init'
+- [x] .gitignore file
 - [x] Update type: module for ES Modules
 - [x] "dev": "node --watch src/index.js"
 - [x] Create src folder
 - [x] Create index.js file
-- [ ] Download resources
+- [x] Download resources (sample resources in this project)
 
 ## Handlebars config
 - [x] 'npm i express-handlebars'
@@ -19,13 +20,17 @@ Steps to build a template for web application built with Node.js, Express, and M
 
 ## Public resources
 - [x] create folder Public in src
-- [ ] save css and images there
+- [x] save css and images there (sample resources in this project)
+
+## Template views
+- [ ] Create layout folder
+- [ ] Create main.hbs (sample in this project)
 
 ## Express config
 - [x] 'npm i express'
 - [x] import express in index.js
 - [x] start server
-- [ ] serve static files from folder Public
+- [x] serve static files from folder Public
 
 
 
