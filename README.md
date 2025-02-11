@@ -33,6 +33,7 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 - [x] Add hrefs in nagivation
 - [x] Remove layout content from templates
 - [x] Fix name attributes for forms
+- [ ] Dynamic page titles
 
 ## Express config
 - [x] 'npm i express'
@@ -60,9 +61,9 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 
 ### Auth Controller
 - [x] Get login
-- [ ] Post login + error handling
+- [x] Post login + error handling
 - [x] Get register
-- [ ] Post register + error handling
+- [ ] Post register + error handling (auto login on success)
 
 ## Services
 - [x] Create services folder
@@ -70,15 +71,17 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 - [ ] Add any other services as per task
 
 ### Auth Service
-- [ ] Import User, bcrypt and jsonwebtoken
-- [ ] 
+- [x] Import User, bcrypt and jsonwebtoken
+- [x] Secret
+- [x] Login function
+- [x] Register function
 
 ## Models
 - [x] Create models folder
 - [x] Add User.js
 - [x] Import Schema and model from Mongoose
 - [x] 'npm i bcrypt' and import bcrypt
-- [ ] 'npm i jsonwebtoken'
+- [x] 'npm i jsonwebtoken'
 - [x] Create user Schema + validations
 - [x] Add pass hash before saving
 - [x] Create user model
@@ -92,6 +95,12 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 - [x] Set routes - auth, resources, etc.
 - [x] Export routes
 - [x] Import and use in index.js
+
+## Error Handling
+- [x] Create error-utils.js in utils folder
+- [x] Create and export a function for extracting 1 or all error messages
+
+
 
 
 
