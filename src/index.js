@@ -25,6 +25,7 @@ app.set('views', './src/views');
 app.use('/static', express.static('src/public'));
 app.use(express.urlencoded({extended: false})); //body parser
 
+
 //DB config
 try {
     const uri = 'mongodb://localhost:27017/test'; //update db
