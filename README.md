@@ -40,26 +40,50 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 - [x] Start server
 - [x] Serve static files from folder Public
 
-## Controllers
-- [x] Create contollers folder
-- [x] Add contoller file for each service
-
 ## Mongoose
 - [x] 'npm i mongoose'
 - [x] Import mongoose
 - [x] Config db in index.js
 - [ ] Display error message when cannot connect to db
 
-## Home Controller
+## Controllers
+- [x] Create contollers folder
+- [x] Add contoller file for each service
+
+### Home Controller
 - [x] Import Router from Express
 - [x] Create get route for home/about
 - [x] Export home controller to use in index.js/routes.js
 
-## Auth Controller
+### Other Controllers
+- [ ] Add other conrollers depending on task
+
+### Auth Controller
 - [x] Get login
 - [ ] Post login + error handling
 - [x] Get register
 - [ ] Post register + error handling
+
+## Services
+- [x] Create services folder
+- [x] Add auth-service.js
+- [ ] Add any other services as per task
+
+### Auth Service
+- [ ] Import User, bcrypt and jsonwebtoken
+- [ ] 
+
+## Models
+- [x] Create models folder
+- [x] Add User.js
+- [x] Import Schema and model from Mongoose
+- [x] 'npm i bcrypt' and import bcrypt
+- [ ] 'npm i jsonwebtoken'
+- [x] Create user Schema + validations
+- [x] Add pass hash before saving
+- [x] Create user model
+- [x] Export model
+
 
 ## Routes
 - [x] Create routes.js file for main routing
