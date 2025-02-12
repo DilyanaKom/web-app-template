@@ -5,7 +5,7 @@ import { getErrorMessage } from '../utils/error-utils.js';
 const authController = Router();
 
 authController.get('/login', (req, res) => {
-    res.render('auth/login');
+    res.render('auth/login', { title: 'Login'});
 });
 
 authController.post('/login', async (req, res) => {
@@ -18,27 +18,41 @@ authController.post('/login', async (req, res) => {
         res.redirect('/');
         
     } catch (error) {
-        return res.render('auth/login', {error: getErrorMessage(error)});
+        return res.render('auth/login', {
+            error: getErrorMessage(error),
+            title: 'Login',
+        });
         
     }
 });
 
 authController.get('/register', (req, res) => {
-    res.render('auth/register');
+    res.render('auth/register', {title: 'Register'});
 });
 
 authController.post('/register', async (req, res) => {
     const userData = req.body;
 
     try {
-        await authService.register(userData);
-        res.redirect('/auth/login');
+       const token =  await authService.register(userData);
+       res.cookie('auth', token, {httpOnly: true})
+        res.redirect('/', {title: 'Register'});
     } catch (error) {
         const errors = getErrorMessage(error);
-        return res.render('auth/register', {error: errors, user: userData});
+        return res.render('auth/register', {
+            error: errors, 
+            user: userData,
+            title: 'Register',
+        });
     }
     
     
+});
+
+authController.get('/logout', (req, res) => {
+    res.clearCookie('auth');
+    res.redirect('/');
+
 })
 
 

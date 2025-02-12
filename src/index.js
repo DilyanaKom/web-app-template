@@ -3,6 +3,7 @@ import handlebars from 'express-handlebars';
 import mongoose from 'mongoose';
 
 import routes from './routes.js'
+import cookieParser from 'cookie-parser';
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.set('views', './src/views');
 //Express config
 app.use('/static', express.static('src/public'));
 app.use(express.urlencoded({extended: false})); //body parser
+app.use(cookieParser());
 
 
 //DB config
