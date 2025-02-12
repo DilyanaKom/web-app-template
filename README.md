@@ -1,5 +1,5 @@
 # web-app-template
-Steps to build a web application with Node.js, Express, and MongoDB.
+Steps to build a web application with Node.js, Express, and MongoDB for study purposes
 
 ## Init project
 - [x] 'npm init'
@@ -34,6 +34,7 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 - [x] Remove layout content from templates
 - [x] Fix name attributes for forms
 - [x] Dynamic page titles
+- [x] Dynamic navigation
 
 ## Express config
 - [x] 'npm i express'
@@ -104,9 +105,9 @@ Steps to build a web application with Node.js, Express, and MongoDB.
 
 
 ## Middlewares
-- [ ] Create middlewares folder
-- [ ] Auth middleware
-- [ ] 'npm i cookie-parser' middleware
+- [x] Create middlewares folder
+- [x] Auth middleware
+- [x] 'npm i cookie-parser' middleware
 
 
 

@@ -44,7 +44,8 @@ export default{
             throw new Error('Invalid email or password!');
         }
 
-        return token = generateToken(user);
+        const token = generateToken(user);
+        return token;
     }
 }
 

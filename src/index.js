@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 
 import routes from './routes.js'
 import cookieParser from 'cookie-parser';
+import { auth } from './middlewares/auth-middleware.js';
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.set('views', './src/views');
 app.use('/static', express.static('src/public'));
 app.use(express.urlencoded({extended: false})); //body parser
 app.use(cookieParser());
+app.use(auth)
 
 
 //DB config
